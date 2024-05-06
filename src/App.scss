@@ -1,0 +1,50 @@
+@import './index.scss';
+.App{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+.card-container{
+  width: clamp(300px,90vw,375px) !important;
+  border-radius: 10px;
+  overflow: hidden;
+  background: $white;
+  header{
+    background: $paleblue no-repeat;
+    height: 220px ;
+  }
+
+  .card_body{
+    padding: 30px 20px;
+    text-align: center;
+    p{
+      padding: 20px 30px;
+    }
+  }
+}
+.button{
+  width: 100%;
+  padding-block: 14px;
+  margin-block: 5px ;
+  border-radius: 5px;
+  font-weight: fontWeight(bold);
+  cursor: pointer;
+  transition: .2s;
+  &.primary{
+    background: $bright-blue;
+    color: $white;
+    box-shadow: 0px 5px 8px  rgba($darkblue, 0.2);
+    &:hover{
+      background: rgba($bright-blue, .7);
+    }
+  }
+  &.secondary{
+    background: none;
+    color: $desaturated-blue;
+  }
+  &:hover{
+    box-shadow: 0px 5px 8px  rgba($desaturated-blue, 0.5);
+  }
+}
