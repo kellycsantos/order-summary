@@ -1,3 +1,4 @@
 export interface IPlan{
-    iconImg: string
+    iconImg?: string,
+    planType: string
 }

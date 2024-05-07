@@ -1,3 +1,4 @@
 export interface ICard{
-    bgHeader?: string
+    bgHeader?: string,
+    imgIcon?: string,
 }
