@@ -1,7 +1,8 @@
 import Button from "./Button"
 import { ICard } from "../interface/ICard"
+import Plan from "./PlanInfo"
 
-export default function CardSumary({ bgHeader }: ICard) {
+export default function CardSumary({ bgHeader, imgIcon }: ICard) {
     return (
         <main className="card-container">
             <header style={{ background: `url(${bgHeader})` }} />
@@ -10,7 +11,7 @@ export default function CardSumary({ bgHeader }: ICard) {
                 <p>You can now listen to millions of songs, audiobooks, and podcasts on any
                     device anywhere you like!</p>
 
-
+                <Plan planType="Annual" iconImg={imgIcon}/>
                 <Button text="Proceed to Payment" variable="primary" />
                 <Button text="Cancel Order" variable="secondary" />
 
